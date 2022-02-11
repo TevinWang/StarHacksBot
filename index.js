@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -5,7 +7,8 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login('NzU5MTczMjMzNDI1MTIxMzEx.X25pKw.S5gyYc9gE_Gg3dwnaTkSQYjXtDQ');
+console.log
+client.login(process.env.DISCORD_API_KEY);
 
 client.on('message', message => {
     try {
