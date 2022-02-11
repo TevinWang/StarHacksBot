@@ -7,7 +7,6 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-console.log
 client.login(process.env.DISCORD_API_KEY);
 
 client.on('message', message => {
